@@ -171,8 +171,6 @@ var handlers = {
     },
 
 
-
-
   'projectStatusIntent': function() {
     var project = this.event.request.intent.slots.projectName.value;
     var projectName = project.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '').toLowerCase()

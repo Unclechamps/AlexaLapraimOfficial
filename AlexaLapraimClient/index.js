@@ -171,8 +171,6 @@ var handlers = {
     },
 
 
-
-
   'projectStatusIntent': function() {
     var project = this.event.request.intent.slots.projectName.value;
     var projectName = project.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '').toLowerCase()
@@ -425,6 +423,6 @@ var handlers = {
 exports.handler = function(event, context, callback){
   var alexa = Alexa.handler(event, context, callback);
   alexa.registerHandlers(handlers);
-  alexa.appId = 'amzn1.ask.skill.87fc94a9-5e22-445f-b02d-2f08e6817977';
+  alexa.appId = 'amzn1.ask.skill.8e23cca2-2b24-4d61-9697-3d22baeb2792';
   alexa.execute();
 };
